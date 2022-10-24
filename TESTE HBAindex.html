@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="funcoes_CPF.js"></script>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+        <div class="container">
+        <div>
+            <h1>Formulário</h1>
+            <p>Cadastro pessoal</p><br>
+        </div>
+        <hr>
+
+        <div class="campo">
+            <label for="nome">Nome completo* </label><br>
+            <input type="text" name="nome" id="nome" placeholder="Coloque seu nome" required>
+        </div>
+            <hr>
+            <fieldset class="grupoId">
+                <div class="campo">
+                    <label for="cpf">CPF* </label><br>
+                    <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx.xx" required>
+                </div>
+                <div class="campo">
+                    <label for="rg">RG </label><br>
+                    <input type="number" name="rg" id="rg" placeholder="xx.xxx.xxx-x">
+                </div>
+                <div class="campo">
+                    <label for="sexo">Sexo</label><br>
+                    <select name="sexo" id="sexo">
+                        <option selected disabled value="" >Selecione</option>
+                        <option value="">Masculino</option>
+                        <option value="">Feminino</option>
+                        </option>
+                    </select>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="grupoEnd">
+                <div class="campo">
+                    <label for="endereco">Endereço*</label><br>
+                    <input type="text" name="endereco" id="endereco" placeholder="Coloque seu endereço">
+                </div>
+                <div class="campo">
+                    <label for="numero">Numero*</label><br>
+                    <input type="number" name="numero" id="numero" placeholder="Numero da residência">
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="grupoEnd1">
+                <div class="campo">
+                    <label for="bairro">Bairro</label><br>
+                    <input type="text" name="bairro" id="bairro" placeholder="Coloque seu bairro"> 
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="grupoLocalidade">
+                <div class="campo">
+                    <label for="cidade">Cidade</label><br>
+                    <input type="text" name="cidade" id="cidade" placeholder="Coloque sua Cidade">
+                </div>
+                <div class="campo">
+                    <label for="estado">Estado*</label><br>
+                    <select name="estado" id="estado">
+                        <option selected disabled value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="cep">CEP</label><br>
+                    <input type="text" name="cep" id="cep" placeholder="xxxxx-xxx" required>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="grupoContato">
+                <div>
+                    <label for="fixo">Telefone fixo*</label><br>
+                    <input type="text" name="fixo" id="fixo" placeholder="(XX) XXXX-XXXX">
+                </div>
+                <div>
+                    <label for="cel">Celular*</label><br>
+                    <input type="text" name="cel" id="cel" placeholder="(XX) XXXXX-XXXX">
+                </div>
+            </fieldset>
+            <hr>
+            <div class="campo">
+                <button class="botao"> ENVIAR</button>
+            </div>
+        
+    </div>
+    <div class="obrigatorio">
+        <h3>*Obrigatório</h3>
+    </div>
+    
+    <footer>
+        <div class="rodape">
+            <div class="ajusteRodape">
+                <h3 class="textoRodape">© 2021 Desenvolvido por Hélio Brito de Assunção </h3>
+                <h4 class="textoRodape">
+                    Programa Formação Tech Itaú 3ª Edição
+                </h4>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
